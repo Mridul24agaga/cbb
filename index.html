@@ -59,20 +59,18 @@
                                     
                                 </li>
                                 <li class="main__menu--items">
-                                    <a class="main__menu--link" href="#about"> About Us </a>  
+                                    <a class="main__menu--link" href="index.html#about"> About Us </a>  
                                 </li>
                                 <li class="main__menu--items">
-                                    <a class="main__menu--link" href="#services"> Services </a>  
+                                    <a class="main__menu--link" href="index.html#services"> Services </a>  
                                 </li>
                                 <li class="main__menu--items">
-                                    <a class="main__menu--link" href="#sell"> Looking to sell? </a>  
+                                    <a class="main__menu--link" href="index.html#sell"> Looking to sell? </a>  
                                 </li>
                                 <li class="main__menu--items">
-                                    <a class="main__menu--link" href="#testimonials"> Testimonials </a>  
+                                    <a class="main__menu--link" href="index.html#testimonials"> Testimonials </a>  
                                 </li>
-                                <li class="main__menu--items">
-                                    <a class="main__menu--link" href="#contact"> Contact </a>  
-                                </li>
+                               
                                
                                 
                             </ul>
@@ -337,10 +335,15 @@
                                     <input id="name" placeholder="Enter your name" type="text" name="first_name">
                                 </div>
                                 <div class="contact__property--form__input">
-                                    <label for="email">Email</label>
-                                    <input id="email" placeholder="Enter your email" type="text" name="email">
+                                    <label for="phone">Phone</label>
+                                    <input id="phone" placeholder="Enter your Phone Number" type="text" name="Phone">
                                 </div>
-                                <div class="contact__property--form__input">
+                                
+                                <div class="contact__property--form__checkbox" style="display: flex; align-items: center; gap: 8px;">
+                                    <input id="sms_consent" type="checkbox" name="sms_consent" style="width: 16px; height: 16px;">
+                                    <label for="sms_consent" style="font-size: 14px;">By providing your phone number, you agree to receive text messages from CBB Home Buyers. Message and data rates may apply. Message frequency varies.  CBB Home Buyers will not share your number with any other parties. <a style="color: blue;" href="privacy-policy.html">Privacy Policy</a></label>
+                                </div>
+                                <div style="margin-top: 10px;" class="contact__property--form__input">
                                     <label for="email">Message</label>
                                     <textarea id="text" placeholder="Enter your message" name="message"></textarea>
                                 </div>
@@ -356,7 +359,7 @@
        
 
         <!-- Testimonial section -->
-        <section class="testimonial__section section--padding color-accent-2">
+        <section id="testimonials" class="testimonial__section section--padding color-accent-2">
             <div class="container">
                 <div class="section__heading text-center mb-20" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                     <h3 class="section__heading--subtitle h5"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -416,7 +419,7 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <p class="testimonial__desc">lorem</p>
+                                    <p class="testimonial__desc">CBB Home Buyers helped me when I was facing foreclosure. They gave me a great offer and closed fast, saving my credit. If you need to sell your home quickly, these are the people to call</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -458,7 +461,7 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <p class="testimonial__desc">lorem</p>
+                                    <p class="testimonial__desc">We inherited a property we didn’t want, and CBB Home Buyers made the entire process seamless. They handled everything, and we got paid quickly. Couldn’t have asked for a better experience!</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -524,55 +527,33 @@
                                             <img class="footer__logo--img" src="new.png" alt="logo-img">
                                         </a>
                                     </div>
-                                    <p class="footer__widget--desc">The world’s first and largest digital market 
-                                        for crypto collectibles and non-fungible (NFTs). Buy</p>
+                                    <p class="footer__widget--desc">Looking to sell? We purchase houses fast, hassle-free, and at a fair price. No repairs, no agent fees—just a smooth, quick sale.
+
+                                    </p>
                                     <ul class="footer__widget--info">
-                                        <li class="footer__widget--info_list">
-                                            <svg class="footer__widget--info__icon" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.3639 0C6.97093 0 3.39844 3.86831 3.39844 8.625C3.39844 14.6036 10.5886 22.4581 10.8939 22.7901C11.024 22.9296 11.1939 23 11.3639 23C11.5338 23 11.7037 22.9296 11.8338 22.7901C12.1392 22.4581 19.3293 14.6036 19.3293 8.625C19.3293 3.86831 15.7568 0 11.3639 0ZM11.3639 21.2419C9.77874 19.4048 4.72601 13.1919 4.72601 8.625C4.72601 4.66181 7.70375 1.4375 11.3639 1.4375C15.024 1.4375 18.0017 4.66181 18.0017 8.625C18.0017 13.1876 12.949 19.4048 11.3639 21.2419Z" fill="#16A34A"/>
-                                                <path d="M11.3636 4.3125C9.16777 4.3125 7.38086 6.24737 7.38086 8.625C7.38086 11.0026 9.16777 12.9375 11.3636 12.9375C13.5594 12.9375 15.3463 11.0026 15.3463 8.625C15.3463 6.24737 13.5594 4.3125 11.3636 4.3125ZM11.3636 11.5C9.89926 11.5 8.70843 10.2106 8.70843 8.625C8.70843 7.03944 9.89926 5.75 11.3636 5.75C12.8279 5.75 14.0187 7.03944 14.0187 8.625C14.0187 10.2106 12.8279 11.5 11.3636 11.5Z" fill="#16A34A"/>
-                                            </svg>   
-                                            <p class="footer__widget--info__text">86 Road Broklyn Street, 600
-                                                New York, USA</p>
-                                        </li>
+                                       
                                         <li class="footer__widget--info_list">                                     
                                             <svg class="footer__widget--info__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M2.51763 19.6352C2.20325 19.6334 1.90222 19.4974 1.67992 19.2567C1.45762 19.016 1.33199 18.69 1.33032 18.3496V7.77586C1.332 7.07078 1.59142 6.39509 2.05186 5.89652C2.5123 5.39795 3.13632 5.11705 3.78748 5.11523H15.3749C16.0271 5.11523 16.6528 5.39533 17.1146 5.89409C17.5764 6.39286 17.8367 7.06959 17.8384 7.77586V14.8227C17.8384 15.529 17.5797 16.2065 17.1191 16.7065C16.6584 17.2066 16.0335 17.4884 15.3812 17.4902H5.71765C5.6079 17.4912 5.50123 17.5297 5.41289 17.6002L3.2351 19.3809C3.02744 19.547 2.77583 19.6362 2.51763 19.6352ZM3.78748 6.49023C3.4731 6.49204 3.17207 6.62807 2.94977 6.86878C2.72747 7.10949 2.60184 7.43545 2.60017 7.77586V18.1777L4.65098 16.5002C4.95955 16.2521 5.33329 16.1172 5.71765 16.1152H15.3749C15.6914 16.1152 15.995 15.9791 16.2189 15.7367C16.4428 15.4943 16.5685 15.1655 16.5685 14.8227V7.77586C16.5669 7.43545 16.4412 7.10949 16.2189 6.86878C15.9966 6.62807 15.6956 6.49204 15.3812 6.49023H3.78748Z" fill="currentColor"/>
-                                                <path d="M12.0855 12.0522C12.436 12.0522 12.7202 11.7444 12.7202 11.3647C12.7202 10.9851 12.436 10.6772 12.0855 10.6772C11.7351 10.6772 11.4509 10.9851 11.4509 11.3647C11.4509 11.7444 11.7351 12.0522 12.0855 12.0522Z" fill="currentColor"/>
-                                                <path d="M9.62168 12.0522C9.97216 12.0522 10.2563 11.7444 10.2563 11.3647C10.2563 10.9851 9.97216 10.6772 9.62168 10.6772C9.27119 10.6772 8.98706 10.9851 8.98706 11.3647C8.98706 11.7444 9.27119 12.0522 9.62168 12.0522Z" fill="currentColor"/>
-                                                <path d="M7.08237 12.0522C7.43286 12.0522 7.71698 11.7444 7.71698 11.3647C7.71698 10.9851 7.43286 10.6772 7.08237 10.6772C6.73188 10.6772 6.44775 10.9851 6.44775 11.3647C6.44775 11.7444 6.73188 12.0522 7.08237 12.0522Z" fill="currentColor"/>
-                                                <path d="M19.7433 12.6777C19.5749 12.6777 19.4134 12.6053 19.2944 12.4764C19.1753 12.3474 19.1084 12.1726 19.1084 11.9902V5.02586C19.1067 4.68545 18.9811 4.35949 18.7588 4.11878C18.5365 3.87807 18.2355 3.74204 17.9211 3.74023H5.14005C4.97166 3.74023 4.81016 3.6678 4.69109 3.53887C4.57202 3.40994 4.50513 3.23507 4.50513 3.05273C4.50513 2.8704 4.57202 2.69553 4.69109 2.5666C4.81016 2.43767 4.97166 2.36523 5.14005 2.36523H17.9211C18.5723 2.36705 19.1963 2.64795 19.6567 3.14652C20.1172 3.64509 20.3766 4.32078 20.3782 5.02586V11.9902C20.3782 12.1726 20.3114 12.3474 20.1923 12.4764C20.0732 12.6053 19.9117 12.6777 19.7433 12.6777Z" fill="currentColor"/>
+                                                <path d="M2.51763 19.6352C2.20325 19.6334 1.90222 19.4974 1.67992 19.2567C1.45762 19.016 1.33199 18.69 1.33032 18.3496V7.77586C1.332 7.07078 1.59142 6.39509 2.05186 5.89652C2.5123 5.39795 3.13632 5.11705 3.78748 5.11523H15.3749C16.0271 5.11523 16.6528 5.39533 17.1146 5.89409C17.5764 6.39286 17.8367 7.06959 17.8384 7.77586V14.8227C17.8384 15.529 17.5797 16.2065 17.1191 16.7065C16.6584 17.2066 16.0335 17.4884 15.3812 17.4902H5.71765C5.6079 17.4912 5.50123 17.5297 5.41289 17.6002L3.2351 19.3809C3.02744 19.547 2.77583 19.6362 2.51763 19.6352ZM3.78748 6.49023C3.4731 6.49204 3.17207 6.62807 2.94977 6.86878C2.72747 7.10949 2.60184 7.43545 2.60017 7.77586V18.1777L4.65098 16.5002C4.95955 16.2521 5.33329 16.1172 5.71765 16.1152H15.3749C15.6914 16.1152 15.995 15.9791 16.2189 15.7367C16.4428 15.4943 16.5685 15.1655 16.5685 14.8227V7.77586C16.5669 7.43545 16.4412 7.10949 16.2189 6.86878C15.9966 6.62807 15.6956 6.49204 15.3812 6.49023H3.78748Z" fill="#fff"/>
+                                                <path d="M12.0855 12.0522C12.436 12.0522 12.7202 11.7444 12.7202 11.3647C12.7202 10.9851 12.436 10.6772 12.0855 10.6772C11.7351 10.6772 11.4509 10.9851 11.4509 11.3647C11.4509 11.7444 11.7351 12.0522 12.0855 12.0522Z" fill="#fff"/>
+                                                <path d="M9.62168 12.0522C9.97216 12.0522 10.2563 11.7444 10.2563 11.3647C10.2563 10.9851 9.97216 10.6772 9.62168 10.6772C9.27119 10.6772 8.98706 10.9851 8.98706 11.3647C8.98706 11.7444 9.27119 12.0522 9.62168 12.0522Z" fill="#fff"/>
+                                                <path d="M7.08237 12.0522C7.43286 12.0522 7.71698 11.7444 7.71698 11.3647C7.71698 10.9851 7.43286 10.6772 7.08237 10.6772C6.73188 10.6772 6.44775 10.9851 6.44775 11.3647C6.44775 11.7444 6.73188 12.0522 7.08237 12.0522Z" fill="#fff"/>
+                                                <path d="M19.7433 12.6777C19.5749 12.6777 19.4134 12.6053 19.2944 12.4764C19.1753 12.3474 19.1084 12.1726 19.1084 11.9902V5.02586C19.1067 4.68545 18.9811 4.35949 18.7588 4.11878C18.5365 3.87807 18.2355 3.74204 17.9211 3.74023H5.14005C4.97166 3.74023 4.81016 3.6678 4.69109 3.53887C4.57202 3.40994 4.50513 3.23507 4.50513 3.05273C4.50513 2.8704 4.57202 2.69553 4.69109 2.5666C4.81016 2.43767 4.97166 2.36523 5.14005 2.36523H17.9211C18.5723 2.36705 19.1963 2.64795 19.6567 3.14652C20.1172 3.64509 20.3766 4.32078 20.3782 5.02586V11.9902C20.3782 12.1726 20.3114 12.3474 20.1923 12.4764C20.0732 12.6053 19.9117 12.6777 19.7433 12.6777Z" fill="#fff"/>
                                             </svg>
-                                            <a class="footer__widget--info__text" href="mailto:example@example.com">Example@example.com</a>
+                                            <a class="footer__widget--info__text" href="mailto:tina@cbbhomebuyers.com">tina@cbbhomebuyers.com</a>
                                         </li>
                                         <li class="footer__widget--info_list">
                                             <svg class="footer__widget--info__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.31 1.52371L18.6133 2.11296C18.6133 2.11296 19.2026 7.41627 13.31 13.3088C7.41748 19.2014 2.11303 18.6133 2.11303 18.6133L1.52377 13.31L5.64971 10.9529L7.71153 13.0148C7.71153 13.0148 9.18467 12.7201 10.9524 10.9524C12.7202 9.18461 13.0148 7.71147 13.0148 7.71147L10.953 5.64965L13.31 1.52371Z" stroke="currentColor" stroke-width="2"></path>
+                                                <path d="M13.31 1.52371L18.6133 2.11296C18.6133 2.11296 19.2026 7.41627 13.31 13.3088C7.41748 19.2014 2.11303 18.6133 2.11303 18.6133L1.52377 13.31L5.64971 10.9529L7.71153 13.0148C7.71153 13.0148 9.18467 12.7201 10.9524 10.9524C12.7202 9.18461 13.0148 7.71147 13.0148 7.71147L10.953 5.64965L13.31 1.52371Z" stroke="#fff" stroke-width="2"></path>
                                             </svg>
-                                            <a class="footer__widget--info__text" href="tel:+1234567898">: (+123) 456-7898</a>
+                                            <a class="footer__widget--info__text" href="tel:+1(213) 336-4605">: +1 (213) 336-4605</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                        
-                        <div class="col-xl-2 col-lg-3 col-md-3">
-                            <div class="footer__widget">
-                                <h2 class="footer__widget--title ">Quick Links <button class="footer__widget--button" aria-label="footer widget button"></button>
-                                    <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
-                                        <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
-                                    </svg>
-                                </h2>
-                                <ul class="footer__widget--menu footer__widget--inner">
-                                    
-                                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="about.html">About Us</a></li>
-                                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="contact.html">Contact</a></li>
-                                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="services-details.html">Services Details </a></li>
-                                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="admin/create-listing.html">Add Listing</a></li>
-                                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="admin/my-properties.html">Property</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                         
                     </div>
                 </div>
@@ -580,7 +561,13 @@
             <div class="footer__bottom color-offwhite">
                 <div class="container">
                     <div class="footer__bottom--inner d-flex justify-content-between align-items-center">
-                        <p class="copyright__content mb-0"><span class="text__secondary">© 2025</span> . CBB HomeBuyers  All Rights Reserved.</p>
+                        <p class="copyright__content mb-0">
+                            <span class="text__secondary">© 2025</span> . CBB HomeBuyers All Rights Reserved.
+                        </p>
+                        <div class="footer__links">
+                            <a href="privacy-policy.html" class="text__secondary me-3">Privacy Policy</a>
+                            <a href="terms.html" class="text__secondary">Terms & Conditions</a>
+                        </div>
                     </div>
                 </div>
             </div>
